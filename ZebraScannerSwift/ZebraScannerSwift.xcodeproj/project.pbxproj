@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1A6268423901135009C9E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A6268323901135009C9E72 /* AppDelegate.swift */; };
+		B1A6268623901135009C9E72 /* AvailableScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A6268523901135009C9E72 /* AvailableScannerVC.swift */; };
+		B1A6268923901135009C9E72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A6268723901135009C9E72 /* Main.storyboard */; };
+		B1A6268B23901138009C9E72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1A6268A23901138009C9E72 /* Assets.xcassets */; };
+		B1A6268E23901138009C9E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A6268C23901138009C9E72 /* LaunchScreen.storyboard */; };
+		B1A6269923901138009C9E72 /* ZebraScannerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A6269823901138009C9E72 /* ZebraScannerSwiftTests.swift */; };
+		B1A626A423901138009C9E72 /* ZebraScannerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A626A323901138009C9E72 /* ZebraScannerSwiftUITests.swift */; };
+		B1A626B323901419009C9E72 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A626B223901419009C9E72 /* CoreBluetooth.framework */; };
+		B1A626B72390144D009C9E72 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A626B62390144D009C9E72 /* ExternalAccessory.framework */; };
+		B1A626BA239102CF009C9E72 /* libsymbolbt-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A626B9239102CF009C9E72 /* libsymbolbt-sdk.a */; };
+		B1A6271C2391420C009C9E72 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A6271B2391420C009C9E72 /* libz.tbd */; };
+		B1A6271F23914797009C9E72 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A6271D23914797009C9E72 /* ConnectionManager.m */; };
+		B1A62722239147C8009C9E72 /* ScannerAppEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A62720239147C8009C9E72 /* ScannerAppEngine.m */; };
+		B1A6272623914968009C9E72 /* BarcodeTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A6272523914968009C9E72 /* BarcodeTypes.m */; };
+		B1A6272B239149D7009C9E72 /* DecodeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A62729239149D7009C9E72 /* DecodeEvent.m */; };
+		B1A6272E239149E8009C9E72 /* BarcodeList.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A6272C239149E8009C9E72 /* BarcodeList.m */; };
+		B1A627302394E386009C9E72 /* ScannedBarcodeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A6272F2394E386009C9E72 /* ScannedBarcodeListVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1A6269523901138009C9E72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1A6267823901135009C9E72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1A6267F23901135009C9E72;
+			remoteInfo = ZebraScannerSwift;
+		};
+		B1A626A023901138009C9E72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1A6267823901135009C9E72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1A6267F23901135009C9E72;
+			remoteInfo = ZebraScannerSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1A6268023901135009C9E72 /* ZebraScannerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZebraScannerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A6268323901135009C9E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1A6268523901135009C9E72 /* AvailableScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableScannerVC.swift; sourceTree = "<group>"; };
+		B1A6268823901135009C9E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1A6268A23901138009C9E72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1A6268D23901138009C9E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1A6268F23901138009C9E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1A6269423901138009C9E72 /* ZebraScannerSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZebraScannerSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A6269823901138009C9E72 /* ZebraScannerSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZebraScannerSwiftTests.swift; sourceTree = "<group>"; };
+		B1A6269A23901138009C9E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1A6269F23901138009C9E72 /* ZebraScannerSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZebraScannerSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A626A323901138009C9E72 /* ZebraScannerSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZebraScannerSwiftUITests.swift; sourceTree = "<group>"; };
+		B1A626A523901138009C9E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1A626B223901419009C9E72 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		B1A626B62390144D009C9E72 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		B1A626B9239102CF009C9E72 /* libsymbolbt-sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libsymbolbt-sdk.a"; path = "symbolbt-sdk/libsymbolbt-sdk.a"; sourceTree = "<group>"; };
+		B1A626BB2391044F009C9E72 /* ZebraScannerSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZebraScannerSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		B1A6271423913A6F009C9E72 /* RMDAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDAttributes.h; sourceTree = "<group>"; };
+		B1A6271523913A6F009C9E72 /* SbtScannerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SbtScannerInfo.h; sourceTree = "<group>"; };
+		B1A6271623913A6F009C9E72 /* ISbtSdkApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISbtSdkApi.h; sourceTree = "<group>"; };
+		B1A6271723913A6F009C9E72 /* SbtSdkDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SbtSdkDefs.h; sourceTree = "<group>"; };
+		B1A6271823913A6F009C9E72 /* FirmwareUpdateEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirmwareUpdateEvent.h; sourceTree = "<group>"; };
+		B1A6271923913A6F009C9E72 /* ISbtSdkApiDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISbtSdkApiDelegate.h; sourceTree = "<group>"; };
+		B1A6271A23913A6F009C9E72 /* SbtSdkFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SbtSdkFactory.h; sourceTree = "<group>"; };
+		B1A6271B2391420C009C9E72 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B1A6271D23914797009C9E72 /* ConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
+		B1A6271E23914797009C9E72 /* ConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
+		B1A62720239147C8009C9E72 /* ScannerAppEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScannerAppEngine.m; sourceTree = "<group>"; };
+		B1A62721239147C8009C9E72 /* ScannerAppEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScannerAppEngine.h; sourceTree = "<group>"; };
+		B1A62723239148A6009C9E72 /* AppSettingsKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppSettingsKeys.h; sourceTree = "<group>"; };
+		B1A6272423914968009C9E72 /* BarcodeTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeTypes.h; sourceTree = "<group>"; };
+		B1A6272523914968009C9E72 /* BarcodeTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeTypes.m; sourceTree = "<group>"; };
+		B1A62728239149A5009C9E72 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		B1A62729239149D7009C9E72 /* DecodeEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecodeEvent.m; sourceTree = "<group>"; };
+		B1A6272A239149D7009C9E72 /* DecodeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecodeEvent.h; sourceTree = "<group>"; };
+		B1A6272C239149E8009C9E72 /* BarcodeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeList.m; sourceTree = "<group>"; };
+		B1A6272D239149E8009C9E72 /* BarcodeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeList.h; sourceTree = "<group>"; };
+		B1A6272F2394E386009C9E72 /* ScannedBarcodeListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannedBarcodeListVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1A6267D23901135009C9E72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A626BA239102CF009C9E72 /* libsymbolbt-sdk.a in Frameworks */,
+				B1A6271C2391420C009C9E72 /* libz.tbd in Frameworks */,
+				B1A626B72390144D009C9E72 /* ExternalAccessory.framework in Frameworks */,
+				B1A626B323901419009C9E72 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A6269123901138009C9E72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A6269C23901138009C9E72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1A6267723901135009C9E72 = {
+			isa = PBXGroup;
+			children = (
+				B1A626BB2391044F009C9E72 /* ZebraScannerSwift-Bridging-Header.h */,
+				B1A6268223901135009C9E72 /* ZebraScannerSwift */,
+				B1A6269723901138009C9E72 /* ZebraScannerSwiftTests */,
+				B1A626A223901138009C9E72 /* ZebraScannerSwiftUITests */,
+				B1A6268123901135009C9E72 /* Products */,
+				B1A626B123901418009C9E72 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B1A6268123901135009C9E72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1A6268023901135009C9E72 /* ZebraScannerSwift.app */,
+				B1A6269423901138009C9E72 /* ZebraScannerSwiftTests.xctest */,
+				B1A6269F23901138009C9E72 /* ZebraScannerSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1A6268223901135009C9E72 /* ZebraScannerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B1A6271323913A6F009C9E72 /* include */,
+				B1A6268323901135009C9E72 /* AppDelegate.swift */,
+				B1A6268523901135009C9E72 /* AvailableScannerVC.swift */,
+				B1A6272F2394E386009C9E72 /* ScannedBarcodeListVC.swift */,
+				B1A6268723901135009C9E72 /* Main.storyboard */,
+				B1A6268A23901138009C9E72 /* Assets.xcassets */,
+				B1A6268C23901138009C9E72 /* LaunchScreen.storyboard */,
+				B1A6268F23901138009C9E72 /* Info.plist */,
+			);
+			path = ZebraScannerSwift;
+			sourceTree = "<group>";
+		};
+		B1A6269723901138009C9E72 /* ZebraScannerSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1A6269823901138009C9E72 /* ZebraScannerSwiftTests.swift */,
+				B1A6269A23901138009C9E72 /* Info.plist */,
+			);
+			path = ZebraScannerSwiftTests;
+			sourceTree = "<group>";
+		};
+		B1A626A223901138009C9E72 /* ZebraScannerSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1A626A323901138009C9E72 /* ZebraScannerSwiftUITests.swift */,
+				B1A626A523901138009C9E72 /* Info.plist */,
+			);
+			path = ZebraScannerSwiftUITests;
+			sourceTree = "<group>";
+		};
+		B1A626B123901418009C9E72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1A6271B2391420C009C9E72 /* libz.tbd */,
+				B1A626B9239102CF009C9E72 /* libsymbolbt-sdk.a */,
+				B1A626B62390144D009C9E72 /* ExternalAccessory.framework */,
+				B1A626B223901419009C9E72 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1A6271323913A6F009C9E72 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B1A6271423913A6F009C9E72 /* RMDAttributes.h */,
+				B1A6271523913A6F009C9E72 /* SbtScannerInfo.h */,
+				B1A6271623913A6F009C9E72 /* ISbtSdkApi.h */,
+				B1A6271723913A6F009C9E72 /* SbtSdkDefs.h */,
+				B1A6271823913A6F009C9E72 /* FirmwareUpdateEvent.h */,
+				B1A6271923913A6F009C9E72 /* ISbtSdkApiDelegate.h */,
+				B1A6271A23913A6F009C9E72 /* SbtSdkFactory.h */,
+				B1A6271E23914797009C9E72 /* ConnectionManager.h */,
+				B1A6271D23914797009C9E72 /* ConnectionManager.m */,
+				B1A62721239147C8009C9E72 /* ScannerAppEngine.h */,
+				B1A62720239147C8009C9E72 /* ScannerAppEngine.m */,
+				B1A62723239148A6009C9E72 /* AppSettingsKeys.h */,
+				B1A6272423914968009C9E72 /* BarcodeTypes.h */,
+				B1A6272523914968009C9E72 /* BarcodeTypes.m */,
+				B1A62728239149A5009C9E72 /* config.h */,
+				B1A6272A239149D7009C9E72 /* DecodeEvent.h */,
+				B1A62729239149D7009C9E72 /* DecodeEvent.m */,
+				B1A6272D239149E8009C9E72 /* BarcodeList.h */,
+				B1A6272C239149E8009C9E72 /* BarcodeList.m */,
+			);
+			name = include;
+			path = "symbolbt-sdk/include";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1A6267F23901135009C9E72 /* ZebraScannerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1A626A823901138009C9E72 /* Build configuration list for PBXNativeTarget "ZebraScannerSwift" */;
+			buildPhases = (
+				B1A6267C23901135009C9E72 /* Sources */,
+				B1A6267D23901135009C9E72 /* Frameworks */,
+				B1A6267E23901135009C9E72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZebraScannerSwift;
+			productName = ZebraScannerSwift;
+			productReference = B1A6268023901135009C9E72 /* ZebraScannerSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1A6269323901138009C9E72 /* ZebraScannerSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1A626AB23901138009C9E72 /* Build configuration list for PBXNativeTarget "ZebraScannerSwiftTests" */;
+			buildPhases = (
+				B1A6269023901138009C9E72 /* Sources */,
+				B1A6269123901138009C9E72 /* Frameworks */,
+				B1A6269223901138009C9E72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1A6269623901138009C9E72 /* PBXTargetDependency */,
+			);
+			name = ZebraScannerSwiftTests;
+			productName = ZebraScannerSwiftTests;
+			productReference = B1A6269423901138009C9E72 /* ZebraScannerSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1A6269E23901138009C9E72 /* ZebraScannerSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1A626AE23901138009C9E72 /* Build configuration list for PBXNativeTarget "ZebraScannerSwiftUITests" */;
+			buildPhases = (
+				B1A6269B23901138009C9E72 /* Sources */,
+				B1A6269C23901138009C9E72 /* Frameworks */,
+				B1A6269D23901138009C9E72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1A626A123901138009C9E72 /* PBXTargetDependency */,
+			);
+			name = ZebraScannerSwiftUITests;
+			productName = ZebraScannerSwiftUITests;
+			productReference = B1A6269F23901138009C9E72 /* ZebraScannerSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1A6267823901135009C9E72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Goalsr;
+				TargetAttributes = {
+					B1A6267F23901135009C9E72 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					B1A6269323901138009C9E72 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = B1A6267F23901135009C9E72;
+					};
+					B1A6269E23901138009C9E72 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = B1A6267F23901135009C9E72;
+					};
+				};
+			};
+			buildConfigurationList = B1A6267B23901135009C9E72 /* Build configuration list for PBXProject "ZebraScannerSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1A6267723901135009C9E72;
+			productRefGroup = B1A6268123901135009C9E72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1A6267F23901135009C9E72 /* ZebraScannerSwift */,
+				B1A6269323901138009C9E72 /* ZebraScannerSwiftTests */,
+				B1A6269E23901138009C9E72 /* ZebraScannerSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1A6267E23901135009C9E72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A6268E23901138009C9E72 /* LaunchScreen.storyboard in Resources */,
+				B1A6268B23901138009C9E72 /* Assets.xcassets in Resources */,
+				B1A6268923901135009C9E72 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A6269223901138009C9E72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A6269D23901138009C9E72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1A6267C23901135009C9E72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A6271F23914797009C9E72 /* ConnectionManager.m in Sources */,
+				B1A627302394E386009C9E72 /* ScannedBarcodeListVC.swift in Sources */,
+				B1A6268623901135009C9E72 /* AvailableScannerVC.swift in Sources */,
+				B1A62722239147C8009C9E72 /* ScannerAppEngine.m in Sources */,
+				B1A6272E239149E8009C9E72 /* BarcodeList.m in Sources */,
+				B1A6268423901135009C9E72 /* AppDelegate.swift in Sources */,
+				B1A6272B239149D7009C9E72 /* DecodeEvent.m in Sources */,
+				B1A6272623914968009C9E72 /* BarcodeTypes.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A6269023901138009C9E72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A6269923901138009C9E72 /* ZebraScannerSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A6269B23901138009C9E72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A626A423901138009C9E72 /* ZebraScannerSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1A6269623901138009C9E72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1A6267F23901135009C9E72 /* ZebraScannerSwift */;
+			targetProxy = B1A6269523901138009C9E72 /* PBXContainerItemProxy */;
+		};
+		B1A626A123901138009C9E72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1A6267F23901135009C9E72 /* ZebraScannerSwift */;
+			targetProxy = B1A626A023901138009C9E72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1A6268723901135009C9E72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1A6268823901135009C9E72 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1A6268C23901138009C9E72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1A6268D23901138009C9E72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1A626A623901138009C9E72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/symbolbt-sdk/include/";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B1A626A723901138009C9E72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/symbolbt-sdk/include/";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1A626A923901138009C9E72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN9UKB32QG;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/symbolbt-sdk/include/";
+				INFOPLIST_FILE = ZebraScannerSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/symbolbt-sdk",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Goalsr.ZebraScannerSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZebraScannerSwift-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1A626AA23901138009C9E72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN9UKB32QG;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/symbolbt-sdk/include/";
+				INFOPLIST_FILE = ZebraScannerSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/symbolbt-sdk",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Goalsr.ZebraScannerSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZebraScannerSwift-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1A626AC23901138009C9E72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN9UKB32QG;
+				INFOPLIST_FILE = ZebraScannerSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Goalsr.ZebraScannerSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZebraScannerSwift.app/ZebraScannerSwift";
+			};
+			name = Debug;
+		};
+		B1A626AD23901138009C9E72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN9UKB32QG;
+				INFOPLIST_FILE = ZebraScannerSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Goalsr.ZebraScannerSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZebraScannerSwift.app/ZebraScannerSwift";
+			};
+			name = Release;
+		};
+		B1A626AF23901138009C9E72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN9UKB32QG;
+				INFOPLIST_FILE = ZebraScannerSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Goalsr.ZebraScannerSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZebraScannerSwift;
+			};
+			name = Debug;
+		};
+		B1A626B023901138009C9E72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN9UKB32QG;
+				INFOPLIST_FILE = ZebraScannerSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Goalsr.ZebraScannerSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZebraScannerSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1A6267B23901135009C9E72 /* Build configuration list for PBXProject "ZebraScannerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A626A623901138009C9E72 /* Debug */,
+				B1A626A723901138009C9E72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1A626A823901138009C9E72 /* Build configuration list for PBXNativeTarget "ZebraScannerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A626A923901138009C9E72 /* Debug */,
+				B1A626AA23901138009C9E72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1A626AB23901138009C9E72 /* Build configuration list for PBXNativeTarget "ZebraScannerSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A626AC23901138009C9E72 /* Debug */,
+				B1A626AD23901138009C9E72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1A626AE23901138009C9E72 /* Build configuration list for PBXNativeTarget "ZebraScannerSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A626AF23901138009C9E72 /* Debug */,
+				B1A626B023901138009C9E72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1A6267823901135009C9E72 /* Project object */;
+}
