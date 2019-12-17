@@ -41,10 +41,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UISupportedExternalAccessoryProtocols</key>
-	<array>
-		<string>com.motorolasolutions.CS4070_ssi</string>
-		<string>com.zebra.scanner.SSI</string>
-	</array>
 </dict>
 </plist>

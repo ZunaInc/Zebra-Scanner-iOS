@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Available ScannerVC-->
+        <!--ScannerVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="AvailableScannerSTBID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="AvailableScannerVC" customModule="ZebraScannerSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScannerSTBID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ScannerVC" customModule="ZebraScannerSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,21 +25,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="95.758928571428569"/>
-        </scene>
-        <!--Scanned Barcode ListVC-->
-        <scene sceneID="AV7-FP-jxx">
-            <objects>
-                <viewController storyboardIdentifier="ScannedBarcodeListSTBID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bSN-Jd-nkl" customClass="ScannedBarcodeListVC" customModule="ZebraScannerSwift" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gAv-R4-cTg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <viewLayoutGuide key="safeArea" id="eAP-aG-ZgK"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Uv-qM-Leb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1730.4347826086957" y="89.732142857142847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mqF-4j-qcj">
